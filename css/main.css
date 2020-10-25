@@ -1,0 +1,28 @@
+:root{
+    /* COLOR VARIABLES */
+    /* PRIMARY */
+    --red: #ff7a7a;
+    --green: #38cc8c;
+
+    /* ACCENT */
+    --blue: #6055a5;
+
+    /* NEUTRAL */
+    --dark-blue: #3e3c49;
+    --grayish-blue: #b9b6d3;
+}
+
+/* RESET'S */
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* GENERAL STYLES */
+
+body{
+    font-family: 'Poppins', 'Arial', 'Helvetica', sans-serif;
+    font-size: 1em;
+}
