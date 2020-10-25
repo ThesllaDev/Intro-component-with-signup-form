@@ -26,9 +26,16 @@ body{
     background: var(--red) url("../img/bg-intro-mobile.png");
     color: #fff;
     font-family: 'Poppins', 'Arial', 'Helvetica', sans-serif;
-    font-size: 1em;
     line-height: 1.5;
     text-align: center;
+}
+
+/* BUTTON EFFECT */
+
+.signature-button:active,
+input[type="submit"]:active{
+    box-shadow: 0px 0px;
+    transform: translateY(10px);
 }
 
 /* LAYOUT */
@@ -49,11 +56,13 @@ body{
 /* INTRO SECTION */
 
 .intro h1{
+    font-size: 2em;
     margin: 15px;
 }
 
 .intro p{
     padding-bottom: 50px;
+    margin: 0 30px;
 }
 
 /* SIGNATURE-BUTTON */
@@ -65,7 +74,6 @@ body{
     box-shadow: 0px 10px rgba(62, 60, 73, .30);
     color: #fff;
     cursor: pointer;
-    font-weight: 600;
     margin-bottom: 25px;
     padding: 20px 50px;
 }
@@ -105,6 +113,12 @@ input[type="submit"]{
     text-transform: uppercase;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    outline: 3px solid var(--dark-blue);
+}
+
 .register p{
     color: var(--grayish-blue);
 }
@@ -112,5 +126,26 @@ input[type="submit"]{
 .register p a{
     color: var(--red);
     font-weight: 500;
-    text-decoration: none;
+}
+
+@media only screen and (min-width: 1000px){
+
+    body{ /* BACKGROUND DESKTOP */
+        background: var(--red) url("../img/bg-intro-desktop.png");
+    }
+
+    /* EFFECTS AND INTERACTIONS */
+    .signature-button:hover{
+        background-color: #3116e0;
+    }
+
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    input[type="password"]:hover{
+        border: 3px solid var(--grayish-blue);
+    }
+
+    input[type="submit"]:hover{
+        background-color: #09f58f;
+    }
 }
