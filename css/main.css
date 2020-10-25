@@ -49,9 +49,7 @@ input[type="submit"]:active{
 }
 
 .intro,
-.register{
-    max-width: 500px;
-}
+.register{ max-width: 500px; }
 
 /* INTRO SECTION */
 
@@ -96,7 +94,7 @@ input[type="submit"]:active{
 
 input{
     border: 1px solid var(--grayish-blue);
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: 600;
     padding: 20px;
 }
@@ -115,37 +113,52 @@ input[type="submit"]{
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="password"]:focus{
-    outline: 3px solid var(--dark-blue);
+input[type="password"]:focus{ outline: 3px solid var(--dark-blue); }
+
+/* MESSAGE ERROR */
+
+small{
+    color: var(--red);
+    font-style: italic;
+    padding-top: 5px;
+    text-align: right;
 }
 
-.register p{
-    color: var(--grayish-blue);
+.icon-error{
+    background-image: url("../img/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.9375rem center;
 }
+
+.description{ color: var(--grayish-blue); }
 
 .register p a{
     color: var(--red);
     font-weight: 500;
 }
 
+/* FOOTER SITE */
+
+footer{ padding-bottom: 25px; }
+
+footer a{
+    color: hsl(228, 45%, 44%);
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 1000px){
 
-    body{ /* BACKGROUND DESKTOP */
-        background: var(--red) url("../img/bg-intro-desktop.png");
-    }
+    /* BACKGROUND DESKTOP */
+    body{ background: var(--red) url("../img/bg-intro-desktop.png"); }
 
     /* EFFECTS AND INTERACTIONS */
-    .signature-button:hover{
-        background-color: #3116e0;
-    }
+    .signature-button:hover{ background-color: #3116e0; }
 
     input[type="text"]:hover,
     input[type="email"]:hover,
-    input[type="password"]:hover{
-        border: 3px solid var(--grayish-blue);
-    }
+    input[type="password"]:hover{ border: 3px solid var(--grayish-blue); }
 
-    input[type="submit"]:hover{
-        background-color: #09f58f;
-    }
+    input[type="submit"]:hover{ background-color: #09f58f; }
+
+    a:hover{ text-decoration: none; }
 }
